@@ -1,0 +1,7 @@
+[project]
+name = "test-uv-manager-python"
+version = "0.1.0"
+description = "Projeto: Estudo do funcionamento do gerenciador de pacotes uv"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
