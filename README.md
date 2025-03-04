@@ -1,6 +1,6 @@
 # UV + Dev Containers com VS Code
 
-Este projeto é uma extensão do projeto <a href="">Dev Containers com VS Code</a> e visa se utilizar dos conhecimentos obtidos em seus estudo para montar a estrutura deste projeto.
+Este projeto é uma extensão do projeto <a href="https://github.com/wyllbrayner/Estudos_dev_container">Dev Containers com VS Code</a> e visa se utilizar dos conhecimentos obtidos em seus estudo para montar a estrutura deste projeto.
 
 __obs:__ _Este projeto visa aprofundar os conhecimentos na utilização da ferramenta <a href="https://docs.astral.sh/uv/">uv</a> em um ambiente de desenvolvimento Linux._
 
