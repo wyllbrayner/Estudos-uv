@@ -39,6 +39,7 @@ Execute o comando __uv init nome_projeto__ em seu terminal. Este comando criará
 ## Executar o programa
 Execute o comando __uv run main.py__ em seu terminal. Este comando executará o programa presente no arquivo _main.py_.
 
+Execute o comando __uv run --flask run -p 3000__. Este comando executará o flask (para este exemplo, o comando add flask, que adiciona o flask ao projeto, deve ter sido executado previamente).
 
 __obs:__ A primeira vez que este comando for executado, o uv criará um novo arquivo e uma nova pasta, são eles:
 
@@ -54,11 +55,13 @@ __obs:__ A primeira vez que este comando for executado, o uv criará um novo arq
 
 Execute o comando __uv add nome_pacote__ no terminal.
     
-    Este comando adicionará "nome_pacote" ao projeto e atualizará os arquivos pyproject.toml e uv.lock com suas dependências.
+    Este comando adicionará "nome_pacote" ao projeto uv e atualizará os arquivos pyproject.toml e uv.lock com suas dependências.
+
+__obs:__ ou execute  o comando __uv add 'nome_pacote==2.31.0'__ para adicionar "mome_pacote", na versão 2.31.0, ao projeto. Este comando também atualizará os arquivos pyproject.toml e uv.lock.
 
 Execute o comando __uv add -r requirements.txt__ no terminal.
     
-    Este comando adicionará todas os pacotes presentes no arquivo "requirements.txt" ao projeto uv.
+    Este comando adicionará todos os pacotes presentes no arquivo "requirements.txt" ao projeto uv.
 
 ## Remover dependências do projeto
 
@@ -74,13 +77,19 @@ Execute o comando __uv sync__ no terminal.
 
     Este comando é útil quando adições e remoções de pacotes são realizadas diretamente nos arquivos de configuração e precisam ser atualizadas no ambiente de desenvolvimento.
 
-## Listar as versões do Python disponíveis
+## Listar as versões disponíveis do Python
 
 Execute o comando __uv python list__ no terminal.
 
     Este comando listará todas as versões do python disponíveis em seu Sistema Operacional.
 
 __obs:__ Execute __uv python install__, para instalar a versão mais atualizada disponível, ou __uv python install 3.12.0__, para instalar a versão 3.12.0 (exemplo) em seu projeto, ou execute __uv python install '>=3.9,<3.11'__, para instalar a versão disponível do python que atenda à restrição descrita.
+
+Execute o comando __uv python install --reinstall__ no terminal para reinstalar todas as versões do python gerenciadas pelo uv.
+
+## Atualizar as versões disponíveis do Python
+
+Execute o comando __uv python upgrade__ para atualizar todas as versões disponíveis do python ou execute o comando __uv python upgrade 3.12__ para atualizar uma versão específica do python.
 
 ## Criar arquivo requirements.txt a partir de um projeto uv
 
@@ -91,3 +100,11 @@ Execute o comando __uv export --format requirements-txt > requirements.txt__ no 
 ## Limpar o cache do uv
 
 Execute o comando __uv clean cache__ no terminal.
+
+## Atualizar a versão do uv
+
+Execute o comando __uv self update__ no terminal.
+
+## Exibe a árvore de dependências do projeto
+
+Execute o comando __uv tree__ no terminal.
